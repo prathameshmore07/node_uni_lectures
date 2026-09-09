@@ -1,0 +1,6 @@
+{
+  "clgname": "niga",
+  "clgid": 67,
+  "vehiclenumber": 2278,
+  "vehicletype":"car"
+}

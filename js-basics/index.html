@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+
+<body>
+
+    <div id="bookingcard">
+        Booking Card
+    </div>
+
+    <div id="passengerinfo">
+        Passenger Info
+    </div>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+
+        let bookingcard = document.getElementById("bookingcard");
+        let passengerinfo = document.getElementById("passengerinfo");
+        let btn = document.getElementById("btn");
+
+        // Single Click
+        btn.addEventListener("click", function () {
+            bookingcard.innerHTML = "Ticket Booked!";
+            passengerinfo.innerHTML = "Passenger: Om";
+        });
+
+        // Double Click
+        btn.addEventListener("dblclick", function () {
+            bookingcard.innerHTML = "Ticket Cancelled!";
+            passengerinfo.innerHTML = "Passenger Information Removed";
+        });
+
+    </script>
+
+</body>
+
+</html>
