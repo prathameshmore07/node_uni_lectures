@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "price": 799,
+    "category": "Electronics",
+    "description": "Ergonomic 2.4GHz wireless mouse"
+  },
+  {
+    "id": 2,
+    "name": "Gaming Keyboard",
+    "price": 2499,
+    "category": "Electronics",
+    "description": "RGB mechanical gaming keyboard"
+  },
+  {
+    "id": 3,
+    "name": "Running Shoes",
+    "price": 1999,
+    "category": "Footwear",
+    "description": "Lightweight breathable sports shoes"
+  }
+]

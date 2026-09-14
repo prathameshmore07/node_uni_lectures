@@ -9,6 +9,7 @@
   "author": "TTT Sahur",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.20.0"
+    "axios": "^1.20.0",
+    "express": "^5.2.1"
   }
 }
