@@ -79,7 +79,7 @@ const generateFullDashboard = (bookings) => {
 const bookings = [
     {
         pnr: 12951001,
-        passengerName: "Eknath Shinde",
+        passengerName: "TTT Sahur",
         age: 65,
         gender: "Male",
         coachClass: "2A",
@@ -91,7 +91,7 @@ const bookings = [
     },
     {
         pnr: 12951002,
-        passengerName: "Devendra Fadnavis",
+        passengerName: "Charlie Kirk",
         age: 25,
         gender: "Male",
         coachClass: "3A",
@@ -103,7 +103,7 @@ const bookings = [
     },
     {
         pnr: 12951003,
-        passengerName: "Daksh Srivastava",
+        passengerName: "Prathamesh More",
         age: 10,
         gender: "Male",
         coachClass: "3A",
@@ -115,7 +115,7 @@ const bookings = [
     },
     {
         pnr: 12951004,
-        passengerName: "Indira Gandhi",
+        passengerName: "Ash Gray",
         age: 32,
         gender: "Female",
         coachClass: "2A",
@@ -127,7 +127,7 @@ const bookings = [
     },
     {
         pnr: 12951005,
-        passengerName: "Narendra Modi",
+        passengerName: "Ben Sharpe",
         age: 45,
         gender: "Male",
         coachClass: "3A",

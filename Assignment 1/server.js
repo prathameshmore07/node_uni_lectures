@@ -1,23 +1,34 @@
-const validateUser = (user) => {
-    const errors = [];
+const express = require("express");
+const { validateUser } = require("./validate");
 
-    if (!user || typeof user !== "object") {
-        return { isValid: false, errors: ["Payload must be an object"] };
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+
+app.use(express.json());
+
+
+app.post("/users", (req, res) => {
+    const userPayload = req.body;
+
+
+    const { isValid, errors } = validateUser(userPayload);
+
+    if (!isValid) {
+        return res.status(400).json({
+            success: false,
+            message: "Validation failed",
+            errors
+        });
     }
 
-    if (typeof user.name !== "string" || !user.name.trim()) {
-        errors.push("name must be a non-empty string");
-    }
+    return res.status(201).json({
+        success: true,
+        message: "User validated and created successfully",
+        user: userPayload
+    });
+});
 
-    if (typeof user.age !== "number" || user.age <= 18) {
-        errors.push("age must be a number greater than 18");
-    }
-
-    if (typeof user.email !== "string" || !user.email.includes("@")) {
-        errors.push("email must include '@'");
-    }
-
-    return { isValid: errors.length === 0, errors };
-};
-
-module.exports = { validateUser };
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
