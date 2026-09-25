@@ -1,4 +1,3 @@
-// Railway Ops DASHBOARD
 
 const getOccupancySummary = (bookings) => {
     const confirmed = bookings.filter(b => b.status === "Confirmed").length;
